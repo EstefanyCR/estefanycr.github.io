@@ -1,0 +1,151 @@
+/* Colores
+Salmon: ED6A5A
+Verde: 60D611
+Morado: A120F5
+ornitorrinco: 36C9C6
+azul: 08B2E3
+
+*/
+
+@font-face {
+    font-family: Iconos-Regular;
+    src: url('../fonts/Iconos-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+ }
+
+ .title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3em;
+ }
+
+
+
+ table{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ a{
+    color: black;
+    text-decoration: none;
+    line-height: 1.9em;
+ }
+
+ a:hover{
+    opacity: 0.8;
+ }
+
+ a:visited{
+    color: #098381;
+ }
+
+ a:active{
+    background-color: #A120F5;
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+ }
+
+ body{
+
+    background: #A120F5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9126ae, #A120F5,  #60D611);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right,  #9126ae, #A120F5, #60D611); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .content{
+    max-width: 990px;
+    max-height: 1370px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    box-shadow: 0 4px 6px rgba(26, 25, 25, 0.89);
+    border-radius: 1em;
+    padding: 3em;
+    overflow-y: scroll;
+ }
+
+
+img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.rating{
+    font-family: Iconos-Regular;
+    color: #efb907;
+    text-align: center;
+    font-size: 12px;
+}
+
+.rp{
+    display: inline-block;
+    font-family: Iconos-Regular;
+    color: #F2C12E;
+    font-size: 15px;
+}
+
+.em{
+    display: inline-block;
+    font-family: Iconos-Regular;
+}
+
+.tabla{
+    width: 100%;
+    border-spacing: 0;
+}
+
+
+.tabla td, .tabla th{
+    padding: 1em;
+    text-align: left;
+    
+}
+
+.tabla tr:nth-child(even){
+    background-color: #e84855c5;
+    
+}
+
+@media (max-width:600px){
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+
+    td:nth-of-type(1){
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+    th{
+        display: none;
+    }
+}
+
+@media (min-height:550px){
+    .content{
+        height: 500px;
+    }
+
+    img{
+        width: 18em;
+    }
+
+    .title{
+        margin-bottom: 0;
+    }
+}
