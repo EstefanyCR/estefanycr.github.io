@@ -20,20 +20,26 @@ tab.forEach(function(link){
 });
 */
 
-let celdas = document.querySelectorAll("a");
+//let celdas = document.querySelectorAll("a");
 
-celdas.forEach(function(td){
-    td.addEventListener('click', function(ev){
-        ev.preventDefault(); // Previene que la funcion haga lo que tiene que hacer
-        return false;
-    })
-})
+//celdas.forEach(function(td){
+ //   td.addEventListener('click', function(ev){
+  //      ev.preventDefault(); // Previene que la funcion haga lo que tiene que hacer
+  //      return false;
+ //   })
+//})
 
 let titulo = document.querySelector("h1");
 
 
-titulo.classList.remove("animate__backInDown");
-        titulo.classList.add("animate__wobble");
+titulo.addEventListener('click', function(){
+    titulo.classList.remove("animate__backInDown");
+    titulo.classList.add("animate__wobble");
+})
+
+
+
+
 
 
 
